@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дарья Поплавская](https://up.htmlacademy.ru/htmlcss/39/user/1336639).
-* Наставник: [Ирина Антипина]{https://htmlacademy.ru/profile/id2108789}.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
