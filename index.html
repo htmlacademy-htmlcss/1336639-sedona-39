@@ -7,14 +7,14 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <nav class="page-header-navigation">
-        <a class="page-header-navigation-logo">
+    <header class="page-header" data-test="header">
+        <a class="page-header-logo">
           <img class="page-header-logo" src="#" alt="Логотип города Седона">
         </a>
+        <nav class="page-header-navigation">
         <ul class="page-header-navigation-list">
           <li class="page-header-navigation-item">
-            <a class="page-header-navigation-link page-header-navigation-link-current" href="index.html">Главная</a>
+            <a class="page-header-navigation-link page-header-navigation-link-current">Главная</a>
           </li>
           <li class="page-header-navigation-item">
             <a class="page-header-navigation-link" href="#">О Седоне</a>
@@ -23,28 +23,28 @@
             <a class="page-header-navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+        </nav>
         <ul class="page-header-navigation-user">
           <li class="page-header-navigation-user-item">
-            <a class="page-header-navigation-user-link user-link-search">
+            <a class="page-header-navigation-user-link user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="page-header-navigation-user-item">
-            <a class="page-header-navigation-user-link user-link-favorite">
+            <a class="page-header-navigation-user-link user-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="notification-mark">12</span>
             </a>
           </li>
         </ul>
-      </nav>
       <a class="page-header-button" href="#">Хочу сюда!</a>
     </header>
-    <main class="main-index">
+    <main class="main-content" data-test="main">
       <section class="introduction">
         <h1 class="visually-hidden">Седона - город в Аризоне</h1>
         <img src="#" alt="Welcome to gorgeous Sedona">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="advantages-lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages-basic">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -52,6 +52,7 @@
           <li class="advantages-item">
             <h3 class="advantages-item-title">Настоящий городок</h3>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="#" alt="Вид на улицу города Седона">
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-title">Небольшая площадь</h3>
@@ -68,11 +69,12 @@
           <li class="advantages-item">
             <h3 class="advantages-item-title">Там есть мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="#" alt="Мост Дьявола">
           </li>
         </ul>
       </section>
       <section class="advertising">
-        <h2 class="visually-hidden">Рекламный блок</h2>
+        <h2 class="visually-hidden">Предлагаемый сервис</h2>
         <p class="advertising-lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="advertising-basic">Опытный персонал и качественное обслуживание!</p>
         <ul class="advertising-list">
@@ -90,14 +92,14 @@
           </li>
         </ul>
       </section>
-      <section class="search">
+      <section class="search" data-test="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p class="search-lead">Заинтересовались?</p>
         <p class="search-basic">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <a class="search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -107,7 +109,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="page-footer-social-list">
         <li class="page-footer-social-item">
           <a class="page-footer-social-link" href="https://vk.com/htmlacademy">
@@ -125,7 +127,7 @@
           </a>
         </li>
       </ul>
-      <a class="page-footer-phone" href="+78128121212">+7 (812) 812-12-12</a>
+      <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="page-footer-logo" href="https://htmlacademy.ru/">
         <img src="#" alt="Логотип HTML Academy">
       </a>
