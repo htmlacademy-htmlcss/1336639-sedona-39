@@ -112,7 +112,7 @@
       <section class="catalog" data-test="catalog">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <p class="search-result-lead">Найдено гостиниц: 38</p>
-        <select class="select-control" aria-label="Сортировка">
+        <select class="select-control" aria-label="Сортировка результатов">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
@@ -120,17 +120,17 @@
         <ul class="button-view-list">
           <li>
             <a href="#" class="button button-view-table">
-              <span class="visually-hidden">Показать таблицу</span>
+              <span class="visually-hidden">Показать в виде таблицы</span>
             </a>
           </li>
           <li>
             <a href="#" class="button button-view-slideshow">
-              <span class="visually-hidden">Показать слайды</span>
+              <span class="visually-hidden">Показать в виде слайдов</span>
             </a>
           </li>
           <li>
             <a href="#" class="button button-view-list">
-              <span class="visually-hidden">Показать список</span>
+              <span class="visually-hidden">Показать списком</span>
             </a>
           </li>
         </ul>
@@ -214,7 +214,7 @@
         <p class="subscribe-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
-          <input type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail">
+          <input type="email" id="subscribe-email" name="email" placeholder="Ваш e-mail" required>
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -239,7 +239,7 @@
       </ul>
       <a class="page-footer-phone" href="+78128121212">+7 (812) 812-12-12</a>
       <a class="page-footer-logo" href="https://htmlacademy.ru/">
-        <img src="images/html-academy.svg" width="115" height="33" alt="Посетить сайт разработчика HTML Academy">
+        <span class="visually-hidden">Посетить сайт разработчика HTML Academy</span>
       </a>
     </footer>
   </body>
