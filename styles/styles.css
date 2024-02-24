@@ -234,10 +234,12 @@ body {
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .service-item {
-  width: 400px;
+  max-width: 400px;
+  padding: 0 85px;
 }
 
 .service-item-title {
@@ -466,7 +468,7 @@ body {
   margin-right: 20px;
 }
 
-.catalog-hotel-item:nth-child(3) {
+.catalog-hotel-item:nth-child(3n) {
   margin-right: 0;
 }
 
