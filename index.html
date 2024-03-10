@@ -10,7 +10,7 @@
   <body>
     <div class="page-container">
       <header class="page-header" data-test="header">
-        <a class="header-logotype">
+        <a class="header-logotype current-page-logotype" tabindex="-1">
           <img class="logotype" src="images/logotype.svg" width="140" height="70" alt="Логотип города Седона.">
         </a>
         <nav class="page-header-navigation">
@@ -75,12 +75,12 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="advantages-item advantages-accent-item visual-dark">
+              <img class="advantages-image" src="images/devils-bridge.jpg" width="800" height="385"
+                alt="Вид на достопримечательность Мост Дьявола.">
               <div class="item-wrapper">
                 <h3 class="advantages-item-title ">Там есть мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img class="advantages-image" src="images/devils-bridge.jpg" width="800" height="385"
-                alt="Вид на достопримечательность Мост Дьявола.">
             </li>
           </ul>
         </section>
@@ -90,15 +90,15 @@
           <p class="service-basic">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
             <li class="service-item visual-light">
-              <h3 class="service-item-title">Жильё</h3>
+              <h3 class="service-item-title house-icon">Жильё</h3>
               <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="service-item visual-medium">
-              <h3 class="service-item-title">Еда</h3>
+              <h3 class="service-item-title food-icon">Еда</h3>
               <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="service-item visual-light">
-              <h3 class="service-item-title">Сувениры</h3>
+              <h3 class="service-item-title souvenir-icon">Сувениры</h3>
               <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
           </ul>
@@ -124,23 +124,23 @@
       <footer class="page-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
+            <a class="social-link social-vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
+            <a class="social-link social-telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
         <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="author-logo" href="https://htmlacademy.ru/">
+        <a class="author-logo-link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">Посетить сайт разработчика HTML Academy</span>
         </a>
       </footer>
