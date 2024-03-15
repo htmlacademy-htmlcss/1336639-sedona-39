@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/images/icons/favicon.svg" type="image/svg+xml">
   </head>
 
   <body>
@@ -39,7 +40,7 @@
             </a>
           </li>
           <li class="user-actions-item">
-            <a class="button page-header-button" href="#">Хочу сюда!</a>
+            <a class="button button-link page-header-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -86,7 +87,7 @@
                 </ul>
               </fieldset>
               <fieldset class="filter-group house-filter">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control" for="hotel">
@@ -116,18 +117,22 @@
                 <div class="price-range">
                   <div class="price-range-inputs-wrapper">
                     <label class="price-filter-label">
-                      <input class="range-input min-price-input" type="number" value="0" name="min-price">
+                      <input class="range-input min-price-input" type="number" value="0" name="min-price"
+                        placeholder="123">
                       <span class="price-input-text">от</span>
                     </label>
                     <label class="price-filter-label">
-                      <input class="range-input max-price-input" type="number" value="9000" name="max-price">
+                      <input class="range-input max-price-input" type="number" value="9000" name="max-price"
+                        placeholder="123">
                       <span class="price-input-text">до</span>
                     </label>
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min" type="button"></button>
-                      <button class="range-toggle toggle-max" type="button"></button>
+                      <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Минимальное
+                          значение</span></button>
+                      <button class="range-toggle toggle-max" type="button"><span class="visually-hidden">Максимальное
+                          значение</span></button>
                     </div>
                   </div>
                 </div>
@@ -176,11 +181,13 @@
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
               <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 4000 ₽</p>
-              <a class="button hotel-card-button" href="#">Подробнее</a>
-              <button class="button button-card-favorite">В избранное</button>
+              <p class="hotel-card-price">От <span class="price-value">4000</span> ₽</p>
+              <a class="button button-link hotel-card-button" href="#">Подробнее</a>
+              <button class="button button-card-favorite" type="button">В избранное</button>
               <p class="hotel-stars hotel-stars-4"><span class="visually-hidden">Отель 4 звезды</span></p>
-              <p class="hotel-card-rating">Рейтинг: 8,5</p>
+              <p class="hotel-card-rating">Рейтинг:
+                <span class="rating-value">8,5</span>
+              </p>
             </li>
             <li class="catalog-hotel-item">
               <a class="hotel-card-link" href="#" tabindex="-1">
@@ -191,11 +198,13 @@
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 5000 ₽</p>
-              <a class="button hotel-card-button" href="#">Подробнее</a>
-              <button class="button button-card-favorite-added">В избранном</button>
+              <p class="hotel-card-price">От <span class="price-value">5000</span> ₽</p>
+              <a class="button button-link hotel-card-button" href="#">Подробнее</a>
+              <button class="button button-card-favorite-added" type="button">В избранном</button>
               <p class="hotel-stars hotel-stars-4"><span class="visually-hidden">Отель 4 звезды</span></p>
-              <p class="hotel-card-rating">Рейтинг: 9,2</p>
+              <p class="hotel-card-rating">Рейтинг:
+                <span class="rating-value">9,2</span>
+              </p>
             </li>
             <li class="catalog-hotel-item">
               <a class="hotel-card-link" href="#" tabindex="-1">
@@ -206,11 +215,13 @@
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 2500 ₽</p>
-              <a class="button hotel-card-button" href="#">Подробнее</a>
-              <button class="button button-card-favorite">В избранное</button>
-              <p class="hotel-stars hotel-stars-3"><span class="visually-hidden">Отель 3 звезды</span></p>
-              <p class="hotel-card-rating">Рейтинг: 6,9</p>
+              <p class="hotel-card-price">От <span class="price-value">2500</span> ₽</p>
+              <a class="button button-link hotel-card-button" href="#">Подробнее</a>
+              <button class="button button-card-favorite" type="button">В избранное</button>
+              <p class=" hotel-stars hotel-stars-3"><span class="visually-hidden">Отель 3 звезды</span></p>
+              <p class="hotel-card-rating">Рейтинг:
+                <span class="rating-value">6,9</span>
+              </p>
             </li>
             <li class="catalog-hotel-item">
               <a class="hotel-card-link" href="#" tabindex="-1">
@@ -221,16 +232,18 @@
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 1500 ₽</p>
-              <a class="button hotel-card-button" href="#">Подробнее</a>
-              <button class="button button-card-favorite">В избранное</button>
-              <p class="hotel-stars hotel-stars-2"><span class="visually-hidden">Отель 2 звезды</span></p>
-              <p class="hotel-card-rating">Рейтинг: 5,0</p>
+              <p class="hotel-card-price">От <span class="price-value">1500</span> ₽</p>
+              <a class="button button-link hotel-card-button" href="#">Подробнее</a>
+              <button class="button button-card-favorite" type="button">В избранное</button>
+              <p class=" hotel-stars hotel-stars-2"><span class="visually-hidden">Отель 2 звезды</span></p>
+              <p class="hotel-card-rating">Рейтинг:
+                <span class="rating-value">5,0</span>
+              </p>
             </li>
           </ul>
           <ul class="catalog-pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-current" title="Текущая страница">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>

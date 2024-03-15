@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/images/icons/favicon.svg" type="image/svg+xml">
   </head>
 
   <body>
@@ -39,7 +40,7 @@
             </a>
           </li>
           <li class="user-actions-item">
-            <a class="button page-header-button" href="#">Хочу сюда!</a>
+            <a class="button button-link page-header-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </header>
@@ -78,7 +79,7 @@
               <img class="advantages-image" src="images/devils-bridge.jpg" width="800" height="385"
                 alt="Вид на достопримечательность Мост Дьявола.">
               <div class="item-wrapper">
-                <h3 class="advantages-item-title ">Там есть мост дьявола</h3>
+                <h3 class="advantages-item-title ">Там есть <br>мост дьявола</h3>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
@@ -91,15 +92,15 @@
           <ul class="service-list">
             <li class="service-item visual-light">
               <h3 class="service-item-title house-icon">Жильё</h3>
-              <p class="service-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="service-description">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </li>
             <li class="service-item visual-medium">
               <h3 class="service-item-title food-icon">Еда</h3>
-              <p class="service-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="service-description">Всегда заказывайте <br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="service-item visual-light">
               <h3 class="service-item-title souvenir-icon">Сувениры</h3>
-              <p class="service-description">Не только китайского, но и настоящего местного производства!</p>
+              <p class="service-description">Не только китайского, <br>но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -109,7 +110,7 @@
           <p class="search-basic">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
             гостиниц в
             Седоне</p>
-          <a class="button search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <a class="button button-link search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
         </section>
         <section class="subscribe subscribe-index" data-test="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -146,45 +147,64 @@
         </a>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-closed">
       <div class="modal-window">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title lead-text">Поиск гостиницы в Седоне</h2>
           <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group arrival-date-form">
+            <div class="arrival-container">
               <label class="search-form-label" for="arrival-date">Дата Заезда:</label>
-              <input class="search-form-input" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
-            </p>
-            <p class="field-group departure-date-form">
+              <div class="search-form-input-wrapper">
+                <input class="search-form-input" type="text" id="arrival-date" name="arrival-date"
+                  value="27 апреля 2020" placeholder="Укажите дату" required>
+                <p class="attention-message error-message">Мы не можем отправить вас в прошлое.</p>
+              </div>
+            </div>
+            <div class="departure-container">
               <label class="search-form-label" for="departure-date">Дата Выезда:</label>
-              <input class="search-form-input" type="text" id="departure-date" name="departure-date"
-                value="1 сентября 2023">
-            </p>
-
-            <div class="field-group adults-form">
+              <div class="search-form-input-wrapper">
+                <input class="search-form-input" type="text" id="departure-date" name="departure-date"
+                  value="1 сентября 2023" placeholder="Укажите дату" required>
+                <p class="attention-message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </div>
+            <div class="adults-form-container">
               <label class="search-form-label" for="adults-quantity">Взрослые:</label>
               <div class="quantity-group">
-                <button class="minus-button" type="button">
+                <button class="minus-button minus-mark" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="quantity-input-form" type="number" id="adults-quantity" name="adults-quantity" value="2">
-                <button class="plus-button" type="button">
+                <button class="plus-button plus-mark" type="button">
                   <span class="visually-hidden">Увеличить количество</span>
                 </button>
               </div>
             </div>
-            <div class="field-group children-form">
-              <label class="search-form-label" for="children-quantity">Дети:</label>
+            <div class="children-form-container">
+              <span class="search-form-label">
+                <label class="search-form-label" for="children-quantity">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                        fill="white" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
               <div class="quantity-group">
-                <button class="minus-button" type="button">
+                <button class="minus-button minus-mark" type="button">
                   <span class="visually-hidden">Уменьшить количество</span>
                 </button>
                 <input class="quantity-input-form" type="number" id="children-quantity" name="children-quantity"
                   value="2">
-                <button class="plus-button" type="button">
+                <button class="plus-button plus-mark" type="button">
                   <span class="visually-hidden">Увеличить количество</span>
                 </button>
               </div>
