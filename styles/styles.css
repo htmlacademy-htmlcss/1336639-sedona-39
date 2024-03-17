@@ -761,6 +761,9 @@ body {
   text-decoration: none;
   display: block;
   cursor: pointer;
+  max-width: 720px;
+  padding: 5px;
+  padding-left: 15px;
 }
 
 .phone-number:hover {
@@ -778,7 +781,7 @@ body {
 .author-logo-link {
   min-width: 125px;
   min-height: 40px;
-  padding: 8px 0 8px 7px;
+  padding: 8px 0 8px 10px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -1217,11 +1220,11 @@ body {
 
 .catalog-hotel-list {
   list-style-type: none;
-  padding: 0 70px 40px;
+  padding: 0 70px 39px;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  gap: 18px 20px;
 }
 
 .catalog-hotel-item {
@@ -1246,6 +1249,7 @@ body {
   width: 300px;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 .hotel-card-image:hover {
@@ -1300,6 +1304,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 8px 5px;
+  border-radius: 4px;
 }
 
 .hotel-stars {
@@ -1386,7 +1391,7 @@ body {
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-  padding: 12px 0;
+  padding: 16px 10px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
