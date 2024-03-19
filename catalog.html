@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="/images/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -113,7 +114,7 @@
                 </ul>
               </fieldset>
               <fieldset class="filter-group price-filter">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <legend class="catalog-filter-title price-title">Стоимость, ₽:</legend>
                 <div class="price-range">
                   <div class="price-range-inputs-wrapper">
                     <label class="price-filter-label">
@@ -129,10 +130,12 @@
                   </div>
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0; width: 226px">
-                      <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Минимальное
-                          значение</span></button>
-                      <button class="range-toggle toggle-max" type="button"><span class="visually-hidden">Максимальное
-                          значение</span></button>
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Минимальное значение</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Максимальное значение</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -147,7 +150,9 @@
         <section class="catalog" data-test="catalog">
           <div class="catalog-results-wrapper">
             <h2 class="visually-hidden">Каталог гостиниц</h2>
-            <p class="search-result lead-text">Найдено гостиниц: <span>38</span></p>
+            <p class="search-result lead-text">Найдено гостиниц:
+              <span>38</span>
+            </p>
             <select class="select-control" aria-label="Сортировка результатов">
               <option value="cheap" selected>Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
@@ -184,7 +189,9 @@
               <p class="hotel-card-price">От <span class="price-value">4000</span> ₽</p>
               <a class="button button-link hotel-card-button" href="#">Подробнее</a>
               <button class="button button-card-favorite" type="button">В избранное</button>
-              <p class="hotel-stars hotel-stars-4"><span class="visually-hidden">Отель 4 звезды</span></p>
+              <p class="hotel-stars hotel-stars-4">
+                <span class="visually-hidden">Отель 4 звезды</span>
+              </p>
               <p class="hotel-card-rating">Рейтинг:
                 <span class="rating-value">8,5</span>
               </p>
@@ -201,7 +208,9 @@
               <p class="hotel-card-price">От <span class="price-value">5000</span> ₽</p>
               <a class="button button-link hotel-card-button" href="#">Подробнее</a>
               <button class="button button-card-favorite-added" type="button">В избранном</button>
-              <p class="hotel-stars hotel-stars-4"><span class="visually-hidden">Отель 4 звезды</span></p>
+              <p class="hotel-stars hotel-stars-4">
+                <span class="visually-hidden">Отель 4 звезды</span>
+              </p>
               <p class="hotel-card-rating">Рейтинг:
                 <span class="rating-value">9,2</span>
               </p>
@@ -218,7 +227,9 @@
               <p class="hotel-card-price">От <span class="price-value">2500</span> ₽</p>
               <a class="button button-link hotel-card-button" href="#">Подробнее</a>
               <button class="button button-card-favorite" type="button">В избранное</button>
-              <p class=" hotel-stars hotel-stars-3"><span class="visually-hidden">Отель 3 звезды</span></p>
+              <p class=" hotel-stars hotel-stars-3">
+                <span class="visually-hidden">Отель 3 звезды</span>
+              </p>
               <p class="hotel-card-rating">Рейтинг:
                 <span class="rating-value">6,9</span>
               </p>
@@ -235,7 +246,9 @@
               <p class="hotel-card-price">От <span class="price-value">1500</span> ₽</p>
               <a class="button button-link hotel-card-button" href="#">Подробнее</a>
               <button class="button button-card-favorite" type="button">В избранное</button>
-              <p class=" hotel-stars hotel-stars-2"><span class="visually-hidden">Отель 2 звезды</span></p>
+              <p class=" hotel-stars hotel-stars-2">
+                <span class="visually-hidden">Отель 2 звезды</span>
+              </p>
               <p class="hotel-card-rating">Рейтинг:
                 <span class="rating-value">5,0</span>
               </p>
@@ -291,7 +304,9 @@
             </a>
           </li>
         </ul>
-        <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="contact">
+          <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <a class="author-logo-link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">Посетить сайт разработчика HTML Academy</span>
         </a>
